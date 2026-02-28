@@ -8,6 +8,7 @@ from nltk.tokenize import word_tokenize
 
 nltk.download('punkt')
 nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 model = pickle.load(open("model.pkl", "rb"))
 vector = pickle.load(open("vectorizer.pkl", "rb"))
