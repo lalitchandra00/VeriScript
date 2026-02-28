@@ -41,7 +41,7 @@ def preprocess(text: str):
 
 
 
-st.title("Welcome to VeriScript")
+st.title("Welcome to VerText")
 st.caption("Fast check to gauge whether text is AI-generated.")
 
 text = st.text_area("Text input", placeholder="Type or paste your text here...", height=200)
