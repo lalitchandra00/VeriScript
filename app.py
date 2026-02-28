@@ -1,10 +1,13 @@
 import pickle
 import random
 import streamlit as st
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 model = pickle.load(open("model.pkl", "rb"))
 vector = pickle.load(open("vectorizer.pkl", "rb"))
